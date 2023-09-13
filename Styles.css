@@ -72,7 +72,7 @@ form {
     margin: 5px 20px 5px 80px;
     width: 300px;
     height: 250px;
-    min-height: 250px;
+    max-height: 250px;
     padding: 2rem 0;
     border-radius: 6px;
     border: 1.5px solid black;
@@ -128,7 +128,6 @@ button {
 .rightside {
     margin-top: 30px;
 }
-
 /*MEDIA QUERY FOR MOBILE RESPONSIVENESS */
 
 /* 768px */
