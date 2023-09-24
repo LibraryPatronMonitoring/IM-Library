@@ -23,6 +23,7 @@ html, body {
     justify-content: flex-start;
     overflow-x: hidden;
     overflow-y: hidden;
+    object-fit: cover;
 }
 /* title */
 h1 {
@@ -41,6 +42,9 @@ p {
     padding: 10px;
     font-size:xx-small;
     width: 450px;
+}
+legend {
+    font-size: large;
 }
 /* logo */
 .IC {
@@ -63,16 +67,15 @@ p {
 }
 /* The whole form */
 form {
-    margin: 0 auto;
-    padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
 /* Box mismo aka. Fieldset */
 .box {
-    margin: 5px 20px 5px 80px;
+    margin: 5px 20px 5px 20px;
     width: 300px;
-    height: 250px;
-    max-height: 250px;
+    max-height: 290px;
     padding: 2rem 0;
     border-radius: 6px;
     border: 0px none black;
@@ -82,14 +85,14 @@ form {
 /* Text before input text */
 label {
     display: block;
-    margin: 5px 10px 5px 10px;
+    margin: 5px 10px 0 20px;
     font-family: Tahoma;
 }
 /* input */
-input{
-    margin: 10px 10px 10px 10px;
-    padding: 0 0 0 5px;
-    width: 300px;
+input[type=text] {
+    margin: 20px 20px 10px 20px;
+    padding: 10px;
+    min-width: 300px;
     height: 40px;
     border: 1.5px solid #ccc;
     border-radius: 4px;
@@ -102,19 +105,17 @@ input:placeholder-shown {
 }
 
 /* submit button*/
-label[for="Submit"] {
-    display: flex;
-    justify-content: center;
-    margin: 30px;
-}
-button {
-    padding: 2px;
-    /* left: 44%;
-    top: 7%; */
-    width: auto;
-    background-color: white /*#d5d5d8*/;
-    border-color: #d5d5d8;
-    font-size: 1rem;
+input[type=submit] {
+    margin: 40px 20px 10px 20px;
+    width: 300px;
+    height: 40px;
+    position: relative;
+    border: 0.2px outset #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    text-align: center;
+    color: #fff;
+    background: #333;
 }
 
 #submit:hover {
@@ -123,14 +124,30 @@ button {
 }
 
 #msg {
-    margin-top: 60px;
+    margin-top: 40px;
     display: flex;
     justify-content: center;
 }
 
-
 .rightside {
     margin-top: 30px;
+}
+
+/* Progress Bar */
+#myProgress {
+    width: 100%;
+    background-color: #ddd; 
+    margin-top: 50px;
+  }
+  
+#progress-bar {
+    width: 0%;
+    height: 5px;
+    /* background-color: #04AA6D; */
+    background-color: #EF2D56;
+    text-align: center;
+    color: white;
+    border-radius: 6px;
 }
 /*MEDIA QUERY FOR MOBILE RESPONSIVENESS */
 
@@ -177,6 +194,9 @@ button {
         margin: 0;
         padding: 10px;
     }
+    form {
+        margin-left: 0;
+    }
     .box {
         margin: 0;
     }
@@ -202,6 +222,9 @@ button {
         font-size: 100%;
         text-align: left;
         margin-bottom: 15px;
+    }
+    form {
+        margin: 0;
     }
     .box {
         margin: 0;
