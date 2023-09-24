@@ -85,12 +85,12 @@ form {
 /* Text before input text */
 label {
     display: block;
-    margin: 5px 10px 0 20px;
+    margin: 20px 10px 5px 20px;
     font-family: Tahoma;
 }
 /* input */
 input[type=text] {
-    margin: 20px 20px 10px 20px;
+    margin: 10px 20px 10px 20px;
     padding: 10px;
     min-width: 300px;
     height: 40px;
@@ -106,7 +106,7 @@ input:placeholder-shown {
 
 /* submit button*/
 input[type=submit] {
-    margin: 40px 20px 10px 20px;
+    margin: 30px 20px 10px 20px;
     width: 300px;
     height: 40px;
     position: relative;
@@ -124,7 +124,7 @@ input[type=submit] {
 }
 
 #msg {
-    margin-top: 40px;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
 }
